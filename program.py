@@ -7,6 +7,7 @@ secretary = employees.Secretary(2, "John Smith", 1500)
 sales_guy = employees.SalesPerson(3, "Kevin Bacon", 1000, 250)
 factory_worker = employees.FactoryWorker(4, "Jane Doe", 40, 15)
 temporary_secretary = employees.TemporarySecretary(5, "Robin Williams", 40, 9)
+factory_sales = employees.FactorySales(6, "Steve Smith", 750, 150)
 
 employees = [
     manager,
@@ -14,6 +15,7 @@ employees = [
     sales_guy,
     factory_worker,
     temporary_secretary,
+    factory_sales,
 ]
 
 productivity_system = productivity.ProductivitySystem()
