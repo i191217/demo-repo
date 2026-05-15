@@ -38,6 +38,10 @@ class TemporarySecretary(Employee, HourlyPolicy, SecretaryRole):
         super().__init__(id, name)
         HourlyPolicy.__init__(self, hours_worked, hourly_rate)
 
+class FactorySales(Employee, CommissionPolicy, FactoryRole):
+    def __init__(self, id, name, weekly_salary, commission):
+        super().__init__(id, name)
+        CommissionPolicy.__init__(self, weekly_salary, commission)
 
 
 
